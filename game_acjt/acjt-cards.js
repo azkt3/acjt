@@ -533,8 +533,8 @@ const StartingStatusConfig = {
     start_regeneration: {
         id: 'start_regeneration', name: '再生能力', icon: '♻️', points: -40,
         description: '天生的再生能力',
-        effect: '堕落+35, 每回合+3HP',
-        statusEffect: { corruption: 35, hpPerTurn: 3 },
+        effect: '堕落+35, 每回合+4HP',
+        statusEffect: { corruption: 35, hpPerTurn: 4 },
         linkedBodyMod: 'regeneration'
     },
     start_pain_pleasure: {
@@ -549,8 +549,8 @@ const StartingStatusConfig = {
     start_pheromone_gland: {
         id: 'start_pheromone_gland', name: '媚香体质', icon: '🌺', points: -25,
         description: '散发迷人香气',
-        effect: '堕落+30, 敌人攻击-2',
-        statusEffect: { corruption: 30, enemyAttackReduce: 2 },
+        effect: '堕落+30, 敌人攻击-3',
+        statusEffect: { corruption: 30, enemyAttackReduce: 3 },
         linkedBodyMod: 'pheromone_gland'
     },
     start_pleasure_nerve: {
@@ -584,8 +584,8 @@ const StartingStatusConfig = {
     start_charm_body: {
         id: 'start_charm_body', name: '天生媚体', icon: '💃', points: -35,
         description: '天生充满魅力的身体',
-        effect: '堕落+40, 攻+5',
-        statusEffect: { corruption: 40, attack: 5 },
+        effect: '堕落+40, 攻+50',
+        statusEffect: { corruption: 40, attack: 50 },
         linkedBodyMod: 'charm_body'
     }
 };
@@ -648,8 +648,8 @@ const OriginConfig = {
         statMods: { attack: 2, defense: -1, corruption: 15 }
     },
     temple_maiden: {
-        id: 'temple_maiden', name: '堕落的圣女', icon: '⛪', points: -30,
-        description: '曾是神殿的圣女，因某种原因被逐出神殿。',
+        id: 'temple_maiden', name: '教会圣女', icon: '⛪', points: 99999999,
+        description: '教会当下的圣女，具有至高无上的权威。',
         effect: '最大HP+10，堕落+25，初始金币+30',
         statMods: { maxHp: 10, hp: 10, corruption: 25, gold: 30 }
     },
